@@ -103,28 +103,31 @@ body {
   }
   
   &::after {
-    position: absolute;
+    /* position: absolute;
     bottom: 1em;
     counter-increment: page;
     content: counter(page) ".";
-    font-size: 0.8em;
+    font-size: 0.8em; */
   }
 }
 .cover {
   &::after {
-    content: "";
+    /* content: "";
+    color: #ffff; */
   }
 }
 .front {
   &::after {
-    right: 1em;
+    /* right: 1em;
+    color: #fff; */
   }
   background: linear-gradient(to left, #f7f7f7 80%, #eee 100%);
   border-radius: .1em .5em .5em .1em;
 }
 .back {
   &::after {
-    left: 1em;
+    /* left: 1em;
+    color: #fff; */
   }
   background-image: linear-gradient(to right, #f7f7f7 80%, #eee 100%);
   border-radius: .5em .1em .1em .5em;
@@ -136,23 +139,4 @@ body {
   color: hsl(200 30% 98%);
 }
 
-footer {
-  
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
 
-footer p {
-  font-size: 1em;
-  color: #333;
-}
-
-footer span {
-  color: red;
-}
-
-footer p {
-  font-size: 0.9em;
-}
