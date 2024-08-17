@@ -64,7 +64,15 @@
 
     <div class="page">
       <div class="front">
-        <video src="vid.mp4" autoplay loop controls style="width: 260px; height: 280px"></video>
+        <video id="myVideo" src="vid.mp4" loop controls style="width: 260px; height: 280px"></video>
+        <script>
+          document.addEventListener('DOMContentLoaded', (event) => {
+            const video = document.getElementById('myVideo');
+            video.play().catch(error => {
+              console.log('Autoplay was prevented:', error);
+            });
+          });
+        </script>
         <p><span style="color: red;"> Note:</span> <i>Play the video before reading.
 </i>
 
